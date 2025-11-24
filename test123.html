@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Exploring 311 data in Python so you don't have to!</title>
+<!-- This is an html comment, oh yeah, hi, this is where you might add css for styling -->
+<style>
+body {
+margin: 40px;
+font-family: Helvetica, Arial, sans-serif;
+color: #191970;
+}
+</style>
+</head>
+<body>
+<h1>There isn't a singular point to this site, I just want to show you that I sort of know what I'm doing.</h1>
+<p>This is a paragraph tag, which means you can write a paragraph and the chunk of css in the head section will dictate what it looks like. Similarly, you can create whatever
+tag you want and it'll act as a sort of "link" between your css style and what shows up in the html. The "p" tag is so-called "standard" html/css, but you can make a tag that's
+called "myspecialtag", and if it's between angled brackets in the html body section, it'll obey whatever css you describe for it in the head section. </p>
+<p>Here's a new paragraph. I wanted to mention that you can embed a bunch of different things in your webpage. Images are a common one, and follow the syntax detailed <a href =
+"https://www.w3schools.com/html/html_images.asp" target = "_blank">here</a>. What you just saw now is a link using the "a" tag. As you go along, you might see "div" pop up.
+That's a catch-all for a webpage container, and matters if you want elements to position themselves dynamically or in specific fixed locations, or if you want your page to be
+more reactive. <a href = "https://www.w3schools.com/html/html_div.asp" target = "_blank">Here's</a> a great reference for that, and hey, while you're at it, poke around the rest
+of the w3schools site, because it's an excellent resource. </p>
+<h2>Pygal Chart</h2>
+<p> Here, remember that we took our 311 dataset, made a new table with agency, complaint type, and count, only keeping complaint types with greater than 2500 total entries, and
+then aggregated the data so that we could make a stacked bar chart showing complaint types and their counts across the dataset. Remember that you did this in Python and it
+created an html document for you. Because this html document has been uploaded to this repository, the html doc you're literally writing right now can call on it and embed it.
+Cool!
+</p>
+<center> <!-- I'm doing a center thingy to center my viz -->
+<iframe src="pygalEX.htm" width="750px" height="390px" style="border:none;"></iframe>
+</center>
+<h2>GeoViews Map</h2>
+<p> Here, remember that we grabbed all noise complaints from the 311 dataset and mapped them by NTA. This was also something that we handled entirely in Python, and an html doc
+was also exported for it. It was interactive to begin with, and it stays interactive as we embed it here. </p>
+<center>
+<iframe src="GeoviewsExample.html" width="750px" height="680px" style="border:none;"></iframe>
+</center>
+<br> <br> <!-- Hardcoded break tag, not the best practice, but in a pinch, it'll do what you need it to do -->
+<p>I was intentional about omitting JavaScript in this example, because we've worked through generating dynamic visualizations in python that circumvent that can of worms. If
+you want to do crazy stuff with js, you can, and that would go in a "script" tag down here at the bottom of the "body" section. </p>
+<p>Thanks for looking at my webpage. Hopefully things are clearer now. <a href = "https://portal.311.nyc.gov/" target = "_blank"> Here's a link</a> to NYC's 311 portal for
+reference. Sorry my visualizations have inconsistent labels and legends! I was working on my thesis and got distracted. </p>
+</body>
+</html>
